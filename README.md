@@ -15,7 +15,7 @@ ones first.
 This app calculates the minimum gold price for any combination of power ups, and shows
 in what order to buy the power ups to get that minimum price.
 
-For example, the minimum price to buy all the power ups is 97,140 gold, if they are bought in the
+For example, the minimum price to buy all the power ups is 167,020 gold, if they are bought in the
 order shown:
 
 ![Screenshot of the game](screenshot.png?raw=true "Vampire Survivors Power Up Optimizer")

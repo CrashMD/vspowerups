@@ -63,6 +63,8 @@ Magnet = power_up(2, 300, "Magnet")
 Luck = power_up(3, 600, "Luck")
 Growth = power_up(5, 900, "Growth")
 Greed = power_up(5, 200, "Greed")
+Curse = power_up(5,1666, "Curse")
+Revival = power_up(1, 10000, "Revival")
 
 
 def optimize(powerups):
@@ -104,7 +106,7 @@ class PowerUpWidget(ttk.Frame):
 
         self.var_buy_cost = tkinter.StringVar(self, value=str(self.powerup.BASE_COST))
         self.buy_cost_label = ttk.Label(
-            self.group, textvariable=self.var_buy_cost, width=5, style="BuyCost.TLabel"
+            self.group, textvariable=self.var_buy_cost, width=6, style="BuyCost.TLabel"
         )
         self.buy_cost_label.grid(row=0, column=2)
 
@@ -142,7 +144,7 @@ class PowerUpsWidget(ttk.Frame):
             cost_frame,
             textvariable=self.var_total_cost,
             style="LargeBold.TLabel",
-            width=5,
+            width=8,
         )
         cost_label.grid(row=0, column=1)
 
@@ -223,7 +225,7 @@ class PowerUpsWidget(ttk.Frame):
 
 
 class App(ttk.Frame):
-    GAME_VERSION = "v0.2.8a"
+    GAME_VERSION = "v0.3.0c"
 
     def __init__(self, parent, **kwargs):
         super().__init__(parent, **kwargs)
